@@ -45,7 +45,7 @@ Make sure you have virtualenv (on OSX: `pip install virtualenv`) then run
 virtualenv env
 source env/bin/activate
 env/bin/pip install git+https://github.com/spotify/gcp-audit.git
-GOOGLE_APPLICATION_CREDENTIALS=YourCredentials-abc123.json env/bin/python gcp-audit
+GOOGLE_APPLICATION_CREDENTIALS=YourCredentials-abc123.json env/bin/python env/bin/gcp-audit
 ```
 
 Alternatively you can specify your credentials using the `-k` switch.
