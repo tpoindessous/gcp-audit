@@ -40,10 +40,11 @@ optional arguments:
 
 ## Prerequisites
 
-Make sure you have virtualenv (on OSX: `brew install virtualenv`) then run
+Make sure you have virtualenv (on OSX: `pip install virtualenv`) then run
 ```bash
 virtualenv env
-env/bin/pip install gcp-audit
+source env/bin/activate
+env/bin/pip install git+https://github.com/spotify/gcp-audit.git
 GOOGLE_APPLICATION_CREDENTIALS=YourCredentials-abc123.json env/bin/python gcp-audit
 ```
 
